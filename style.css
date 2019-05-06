@@ -1,0 +1,64 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 100vw;
+  height: 50vh;
+}
+
+.image-box {
+  width: 800px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.image-div {
+  position: absolute;
+  left: calc(50% - 400px);
+  top: 0px;
+  width: 800px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.image-div img {
+  opacity: 0;
+}
+
+.last-btn {
+  position: absolute;
+  background-color: #ffffff66;
+  left: calc(50% - 400px);
+  top: 0px;
+  width: 50px;
+  line-height: 300px;
+  font-size: 50px;
+  transition: opacity .5s;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.next-btn {
+  position: absolute;
+  background-color: #ffffff66;
+  left: calc(50% + 350px);
+  top: 0px;
+  width: 50px;
+  line-height: 300px;
+  font-size: 50px;
+  transition: opacity .5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.image-box:hover>.last-btn {
+  opacity: 1;
+}
+
+.image-box:hover>.next-btn {
+  opacity: 1;
+}
